@@ -45,20 +45,12 @@ num /= 2
 //console.log(num)
 
 
-//object clone
-let userDetails = {
-    name: 'Piyush Dutta',
-    age: 25,
-    verified: false
-}
-// let clone = userDetails;
-// let clone = {...userDetails};
-// let clone = Object.assign({}, userDetails);
- let clone = JSON.parse(JSON.stringify(userDetails));
 
-clone.name = "ajay";
-
-
-
-console.log(clone)
-console.log(userDetails)
+let count = 0;
+let interval = setInterval(() => {
+  count++;
+//   console.log(count)
+  if(count === 5){
+    clearInterval(interval)
+  }
+}, 1000);

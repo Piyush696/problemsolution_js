@@ -40,3 +40,6 @@ const fruits = [
   })
 console.log(couterFruits)
 
+const array1 = [23,42,76,433,232,33];
+const result = Object.keys(array1);
+console.log(result)
