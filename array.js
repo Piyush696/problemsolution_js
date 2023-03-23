@@ -113,4 +113,12 @@ const findArray = [1, 2, 3, 4, 5, 6, 7, 8];
 const foundFruits = invertory.find(e => {
     return e.name === 'bananes'
 })
- console.log(foundFruits)
+//  console.log(foundFruits)
+
+//every methods
+
+const bigArray = [1, 2, 3, 4, 5, 6, 7];
+const smallArray = [5, 6, 17];
+
+const result12 = smallArray.every((e) => bigArray.includes(e));
+ console.log(result12)

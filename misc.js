@@ -56,10 +56,3 @@ let interval = setInterval(() => {
 }, 1000);
 
 
-//every methods
-
-const bigArray = [1, 2, 3, 4, 5, 6, 7];
-const smallArray = [5, 6, 17];
-
-const result = smallArray.every((e) => bigArray.includes(e));
- console.log(result)
