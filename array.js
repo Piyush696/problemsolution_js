@@ -69,5 +69,48 @@ const animals = ['dodo', 'tiger', 'fox'];
 
 const arr3 = [1, 2, 3, 3, 5, 6 ];
 
-console.log(arr3.some((e) => e === 6
-))
+// console.log(arr3.some((e) => e === 6
+// ))
+
+//splice methods
+const moths = ['January', 'febuary', 'monday', 'Tuesday'];
+
+// let resultm = moths.splice(2);
+// let months = moths.splice(2, 2, "March", "April");
+let months = moths.splice(2, 0, "March", "April");
+// console.log(resultm)
+// console.log(moths)
+
+//slice methods
+const fruitArray = ['Mango', "orange", 'apple', 'grapes','lemon'];
+ let result1 = fruitArray.slice(2, -1);
+//  console.log(result1)
+
+
+//push, pop, shift, unshift 
+const number = [1, 2, 3, 4, 5, 6, 7, 8];
+number.push(9);
+// number.unshift(9);
+//   number.pop();
+//  number.shift()
+
+// console.log(number)
+
+
+//find methods
+const findArray = [1, 2, 3, 4, 5, 6, 7, 8];
+ const found = findArray.find(e => e === 5);
+  
+//  console.log(found)
+
+
+ const invertory = [
+    {name :'Apple', quatiny: 5 },
+    {name :'bananes', quatiny: 6 },
+    {name :'cheeries', quatiny: 9 },
+ ]
+
+const foundFruits = invertory.find(e => {
+    return e.name === 'bananes'
+})
+ console.log(foundFruits)
