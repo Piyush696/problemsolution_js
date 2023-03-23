@@ -37,10 +37,4 @@ const last4number = num.slice(-4)
 //replace
 const word = "sdddad ikds gvsfs sdgsegf gvsfs, regrtg, Gvsfs";
 const regex = /gvsfs/gi;
-console.log(word.replace(regex, 'ikds'))
-
-
-
-
-
-
+// console.log(word.replace(regex, 'ikds'))

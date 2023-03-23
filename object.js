@@ -96,7 +96,7 @@ const salies = {
  
 for(const key in salies){
     salies[key] = `@ ${salies[key]}`
-    console.log(key)
+    // console.log(key)
 }
  
 // console.log(salies)
@@ -112,5 +112,38 @@ const student = [['asd', 'rr34r34'], ['reerert','34r34r3'], ['fer3r', 'trgtg']];
 // }
 
 for(const [key, value] of student){
-    console.log(key, value)
+    // console.log(key, value)
    }
+
+
+
+//convert  array to object
+   const arr = [
+    ['name',"piyush"],
+    ['age',34]
+];
+//    console.log(Object.fromEntries(arr))
+
+
+//spread operntor
+
+const obj7 = {
+    a: 'somethings',
+    b:23,
+    c:false
+};
+
+const obj8 = {
+    a: 'somethings',
+    b:23,
+    c:false
+};
+
+const obj9 = {
+    a: 'somethings',
+    b:23,
+    c:false
+};
+
+const z = { ...obj7, ...obj8, ...obj9 };
+console.log(z)

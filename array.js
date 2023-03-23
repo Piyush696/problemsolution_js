@@ -121,4 +121,24 @@ const bigArray = [1, 2, 3, 4, 5, 6, 7];
 const smallArray = [5, 6, 17];
 
 const result12 = smallArray.every((e) => bigArray.includes(e));
- console.log(result12)
+//  console.log(result12)
+
+
+//convert object to array
+
+const obj = {
+    name: 'Piyush Dutta',
+    age: 25,
+    verified: false
+}
+
+// console.log(Object.entries(obj))
+
+
+const arra1 = [2, 7, 9, 2];
+const arra2 = [2, 7, 9, 2];
+const arra3 = [2, 7, 9, 2];
+
+const y = [...arra1, ...arra2, ...arra3];
+
+// console.log(y)
