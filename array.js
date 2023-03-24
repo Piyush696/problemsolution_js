@@ -142,3 +142,26 @@ const arra3 = [2, 7, 9, 2];
 const y = [...arra1, ...arra2, ...arra3];
 
 // console.log(y)
+
+// sort of array of object
+const userReault =[
+ {subject: 'Science', marks:13},
+ {subject: 'Math', marks:53},
+ {subject: 'English', marks:25},
+ {subject: 'Hindi', marks:13}
+];
+
+userReault.sort((a, b) => a.marks - b.marks)
+
+// console.log(userReault);
+
+//sorting array of strings
+let arrayString = ["q", 'a', 'c', 'v', 'r', 'e', 'b'];
+arrayString.sort();
+arrayString.reverse();
+
+// console.log(arrayString);
+
+
+//
+

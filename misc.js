@@ -57,3 +57,26 @@ let interval = setInterval(() => {
 
 
 
+//Recursive function in js
+function coutDown(num){
+  // console.log(num)
+  const  newNum = num - 1;
+  if(newNum > 0){
+    coutDown(newNum);
+  }
+}
+
+coutDown(5)
+
+
+
+//curring function
+const currFuc_add = (a) => {
+  return(b) => {
+    return(c) => {
+      return a+b+c;
+    }
+  }
+}
+
+// console.log(currFuc_add(2, 4, 6));
