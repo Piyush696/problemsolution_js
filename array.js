@@ -163,5 +163,39 @@ arrayString.reverse();
 // console.log(arrayString);
 
 
-//
+//map in array
+const mapArray = ['2','3','4','5','6','7'];
+const afterMap = mapArray.map( element => { return element * 3 })
 
+// console.log(afterMap);
+
+let usersMarks = [
+    {name: 'Aksgh', marks:13},
+    {name: 'sursj', marks:53},
+    {name: 'bono', marks:25},
+    {name: 'ravi', marks:13}
+];
+
+const usersMap = usersMarks.map(({name, marks}) =>{
+    return `${name} ${marks}`
+})
+// console.log(usersMap);
+
+
+//filter
+
+const words = ['soreay', 'fewfw', 'ferfr', 'rferfe', 'dewfewfwefwef', 'dwqdqwdwqdwqdfrrgtrg'];
+const wordsFilter = words.filter(ele => ele.length > 6);
+
+
+// console.log(wordsFilter);
+
+const filterArray = ['2','3','4','5','6','7'];
+const numFilter = filterArray.filter((element) =>{
+     if(element % 2 === 0){
+        return true
+     } else {
+        return false
+     }
+})
+ console.log(numFilter)
