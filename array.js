@@ -198,4 +198,4 @@ const numFilter = filterArray.filter((element) =>{
         return false
      }
 })
- console.log(numFilter)
+//  console.log(numFilter)
