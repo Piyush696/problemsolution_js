@@ -68,3 +68,121 @@ if(numberoddEven   % 2 == 0) {
 else {
     console.log("The number is odd.");
 }
+
+
+// program to check if the string is palindrome or not
+
+function checkPalindrome(string) {
+
+    // convert string to an array
+    const arrayValues = string.split('');
+
+    // reverse the array values
+    const reverseArrayValues = arrayValues.reverse();
+
+    // convert array to string
+    const reverseString = reverseArrayValues.join('');
+
+    if(string == reverseString) {
+        // console.log('It is a palindrome');/
+    }
+    else {
+        // console.log('It is not a palindrome');
+    }
+}
+
+//take input
+const string = 'helleh';
+
+checkPalindrome(string);
+
+
+// program to loop through an object using for...in loop
+
+const student = { 
+    name: 'John',
+    age: 20,
+    hobbies: ['reading', 'games', 'coding'],
+};
+
+// using for...in
+for (let key in student) { 
+    let value;
+
+    // get the value
+    value = student[key];
+
+    // console.log(key + " - " +  value); 
+} 
+
+
+// program to check if a number is prime or not
+
+// take input from the user
+const pnumber = 2;
+let isPrime = true;
+
+// check if number is equal to 1
+if (pnumber === 1) {
+    console.log("1 is neither prime nor composite number.");
+}
+
+// check if number is greater than 1
+else if (pnumber > 1) {
+
+    // looping through 2 to number-1
+    for (let i = 2; i < pnumber; i++) {
+        if (pnumber % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime) {
+        console.log(`${pnumber} is a prime number`);
+    } else {
+        console.log(`${pnumber} is a not prime number`);
+    }
+}
+
+// check if number is less than 1
+else {
+    console.log("The number is not a prime number.");
+}
+
+
+
+// program to remove item from an array
+
+function removeItemFromArray(array, n) {
+    const newArray = [];
+
+    for ( let i = 0; i < array.length; i++) {
+        if(array[i] !== n) {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
+}
+
+const result = removeItemFromArray([1, 2, 3 , 4 , 5], 2);
+
+console.log(result);
+
+
+// program to insert an item at a specific index into an array
+
+function insertElement() {
+    let array = [1, 2, 3, 4, 5];
+
+    // index to add to
+    let index = 3;
+
+    // element that you want to add
+    let element = 8;
+  
+    array.splice(index, 0, element);
+    console.log(array);
+}
+
+insertElement();
