@@ -182,7 +182,48 @@ function insertElement() {
     let element = 8;
   
     array.splice(index, 0, element);
-    console.log(array);
+    // console.log(array);
 }
 
 insertElement();
+
+
+
+// program to append an object to an array
+
+function insertObject(arr, obj) {
+
+    // append object
+    arr.push(obj);
+    
+    // console.log(arr);
+}
+
+// original array
+let array = [1, 2, 3];
+
+// object to add
+let object = {x: 12, y: 8};
+
+// call the function
+insertObject(array, object);
+
+
+
+
+// program to empty an array
+
+function emptyArray(arr1) {
+
+    // substituting new array
+    arr1 = [];
+    
+    return arr1;
+}
+
+const array1 = [1, 2 ,3];
+console.log(array1);
+
+// call the function
+const result1 = emptyArray(array1 );
+console.log(result1);
