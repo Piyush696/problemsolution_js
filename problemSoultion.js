@@ -226,4 +226,63 @@ console.log(array1);
 
 // call the function
 const result1 = emptyArray(array1 );
-console.log(result1);
+// console.log(result1);
+
+
+// program to merge and remove duplicate value from an array
+
+function getUniqueAfterMerge(arr1, arr2){
+
+    // merge two arrays
+    let arr = arr1.concat(arr2);
+    let uniqueArr = [];
+
+    // loop through array
+    for(let i of arr) {
+        if(uniqueArr.indexOf(i) === -1) {
+            uniqueArr.push(i);
+        }
+    }
+    console.log(uniqueArr);
+}
+
+const array12 = [1, 2, 3];
+const array2 = [2, 3, 5]
+
+// calling the function
+// passing array argument
+// getUniqueAfterMerge(array12, array2);
+
+
+
+// program to merge and remove duplicate value from an array
+
+function getUniqueAfterMerge(arr1, arr2){
+
+    // merge two arrays
+    let arr = [...arr1, ...arr2];
+
+    // removing duplicate
+    let uniqueArr = [...new Set(arr)];
+
+    console.log(uniqueArr);
+}
+
+const array123 = [1, 2, 3];
+const array21 = [2, 3, 5]
+
+// calling the function
+getUniqueAfterMerge(array123, array21);
+
+
+
+// program to sort array by property name
+
+function compareAge(a, b) {
+
+    return a.age - b.age;
+}
+
+const students = [{name: 'Sara', age:24},{name: 'John', age:22}, {name: 'Jack', age:27}];
+
+console.log(students.sort(compareAge));
