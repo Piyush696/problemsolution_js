@@ -265,7 +265,7 @@ function getUniqueAfterMerge(arr1, arr2){
     // removing duplicate
     let uniqueArr = [...new Set(arr)];
 
-    console.log(uniqueArr);
+    // console.log(uniqueArr);
 }
 
 const array123 = [1, 2, 3];
@@ -285,4 +285,23 @@ function compareAge(a, b) {
 
 const students = [{name: 'Sara', age:24},{name: 'John', age:22}, {name: 'Jack', age:27}];
 
-console.log(students.sort(compareAge));
+// console.log(students.sort(compareAge));
+
+
+// program to split array into smaller chunks
+
+// program to split array into smaller chunks
+
+function splitIntoChunk(arr, chunk) {
+
+    while(arr.length > 0) {
+
+        let tempArray;
+        tempArray = arr.splice(0, chunk);
+        console.log(tempArray);
+    }
+}
+
+const arrayChunks = [1, 2, 3, 4, 5, 6, 7, 8];
+const chunk = 2;
+splitIntoChunk(arrayChunks, chunk);
