@@ -298,10 +298,95 @@ function splitIntoChunk(arr, chunk) {
 
         let tempArray;
         tempArray = arr.splice(0, chunk);
-        console.log(tempArray);
+        // console.log(tempArray);
     }
 }
 
 const arrayChunks = [1, 2, 3, 4, 5, 6, 7, 8];
 const chunk = 2;
 splitIntoChunk(arrayChunks, chunk);
+
+
+// program to perform function overloading
+
+function sum() {  
+    
+    // if no argument        
+    if (arguments.length == 0) {  
+        console.log('You have not passed any argument');  
+    }
+
+    // if only one argument 
+    else if (arguments.length == 1) {  
+        console.log('Pass at least two arguments');  
+    }
+
+    // multiple arguments
+    else {
+        let result = 0;
+        let length = arguments.length;
+    
+        for (i = 0; i < length; i++) {  
+            result = result + arguments[i];  
+        }  
+        // console.log(result); 
+    }  
+}
+
+sum();
+sum(5); 
+sum(5, 9);    
+sum(1, 2, 3, 4, 5, 6, 7, 8, 9); 
+
+
+
+// program to check if a number is a float or integer value
+
+function checkNumber(x) {
+
+    // check if the passed value is a number
+    if(typeof x == 'number' && !isNaN(x)){
+    
+        // check if it is integer
+        if (Number.isInteger(x)) {
+            console.log(`${x} is integer.`);
+        }
+        else {
+            console.log(`${x} is a float value.`);
+        }
+    
+    } else {
+        console.log(`${x} is not a number`);
+    }
+}
+
+checkNumber('hello');
+checkNumber(44);
+checkNumber(3.4);
+checkNumber(-3.4);
+checkNumber(NaN);
+
+// program to check if a number is a float or integer value
+
+function checkNumber(x) {
+
+    let regexPattern = /^-?[0-9]+$/;
+    
+    // check if the passed number is integer or float
+    let result = regexPattern.test(x);
+    
+    if(result) {
+        console.log(`${x} is an integer.`);
+    }
+    else {
+        console.log(`${x} is a float value.`)
+    }
+
+}
+
+checkNumber(44);
+checkNumber(-44);
+checkNumber(3.4);
+checkNumber(-3.4);
+
+
